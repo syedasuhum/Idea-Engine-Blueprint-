@@ -10,7 +10,7 @@ import Left_part from './Left_part';
 function Welcome_page() {
     return (
         <div className='container-fluid'>
-            {/* <header className='header-class'>
+            <header className='header-class left-acc'>
                 <div className='menu'>
                     <h5 classsName='logo-text'>TEN Market</h5>
                     <Link to="/QnA_page"><button className='new-btn  mt-4'><FontAwesomeIcon icon={faPlus} ></FontAwesomeIcon>Add Blueprint</button></Link>
@@ -25,8 +25,8 @@ function Welcome_page() {
                 <div className='del-position'>
                     <button type='button' className='delete mt-3'><FontAwesomeIcon icon={faTrashCan} ></FontAwesomeIcon>Clear drafts</button>
                 </div>
-            </header> */}
-            <Left_part/>
+            </header>
+            {/* <Left_part/> */}
 
             <div className='day-algin'>
 
