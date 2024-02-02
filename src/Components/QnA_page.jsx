@@ -610,12 +610,28 @@ const inputFunction = () =>{
         inputRef.current.focus();
       }
 };
+
 //input display
 const [typeText, setTypeText] = React.useState("");
 
   function handleText(event) {
     setTypeText(event.target.value);
   }
+
+
+const [inputText, setInputText] = useState("");
+const [displayedText, setDisplayedText] = useState("");
+
+  const handleInputChange = (event) => {
+    setInputText(event.target.value);
+  };
+
+  const handleEnterPress = (event) => {
+    if (event.key === "Enter") {
+      setDisplayedText(inputText);
+      setInputText("");
+    }
+};
     return (
         <div className='container'>
              <header className='q-header-class left-acc'>
@@ -931,7 +947,7 @@ const [typeText, setTypeText] = React.useState("");
 
                             </div>
                             <div className='col-lg-4 col-md-6 col-12' onClick={influencerHandler}>
-                                <div className='qna-border' style={{ border: buttoninfluencer }}>
+                                <div className='qna-border' style={{ border: buttoninfluencer }} onClick={inputFunction}>
                                     <img src='./images/influencer_marketing.png' alt=''></img>
                                     <div className='mydivider mt-4'></div>
                                     <p className='qna-text'>Influencer Marketing</p>
@@ -3187,13 +3203,6 @@ const [typeText, setTypeText] = React.useState("");
                  
 
 
-
-
-
-
-                
-
-
                 
 
             {/* Right accordion */}
@@ -3235,18 +3244,21 @@ const [typeText, setTypeText] = React.useState("");
             </div>
             {/* <Right_part/> */}
             
-            {/* <footer>
-            {/* <div className="container">
+             <footer>
+             {/* <div className="container">
         <input type="text" onChange={handleText} />
-      </div> *
+      </div>  */}
 
-      <div className="text-container">{typeText}</div>
+      {/* <div className="text-container">{typeText}</div> */}
+      <div style={{color:"white", marginLeft:"14rem", textAlign:"initial"}} ref = {inputRef}> {displayedText && <p>  {displayedText}</p>}</div>
     <div className='container input--field p-3' >
-        <input className='input-field p-2' type='text'  onChange={handleText} readOnly= {true} placeholder='Enter the text here' ref = {inputRef}></input>
+      <input type="text" className='input-field p-2' value={inputText} onChange={handleInputChange} onKeyPress={handleEnterPress} 
+      readOnly= {true} placeholder='Enter the text here' ref = {inputRef} />
+        {/* <input className='input-field p-2' type='text'  onChange={handleText} readOnly= {true} placeholder='Enter the text here' ref = {inputRef}></input> */}
      
-        {/* <p className='bottom-text p-2'>
+         {/* <p className='bottom-text p-2'>
         Our goal is to make the startup ecosystem systems more seamless. Your<a href='#'>feedback</a> will help us to improve.
-        </p> *
+        </p>  */}
     </div>
     <div>
        
@@ -3257,7 +3269,7 @@ const [typeText, setTypeText] = React.useState("");
         </p>
         </div>
     
-</footer> */}
+</footer> 
 
             
         </div>
