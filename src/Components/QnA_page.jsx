@@ -612,26 +612,51 @@ const inputFunction = () =>{
 };
 
 //input display
-const [typeText, setTypeText] = React.useState("");
+//const [typeText, setTypeText] = React.useState("");
 
-  function handleText(event) {
-    setTypeText(event.target.value);
-  }
+//   function handleText(event) {
+//     setTypeText(event.target.value);
+//   }
 
 
-const [inputText, setInputText] = useState("");
-const [displayedText, setDisplayedText] = useState("");
+//const [inputText, setInputText] = useState("");
+//const [displayedText, setDisplayedText] = useState("");
 
-  const handleInputChange = (event) => {
-    setInputText(event.target.value);
+//   const handleInputChange = (event) => {
+//     setInputText(event.target.value);
+//   };
+
+//   const handleEnterPress = (event) => {
+//     if (event.key === "Enter") {
+//       setDisplayedText(inputText);
+//       setInputText("");
+//     }
+// };
+// For Question and Answer
+
+const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+const [userResponses, setUserResponses] = useState([]);
+
+const questions = [
+    "",
+    <span style={{width:'200px'}}> <TypeAnimation
+    sequence={[
+        // Same substring at the start will only be typed out once, initially
+        'What type of content and messaging will resonate with your audience (For example, product reviews, sponsored content, giveaways)',
+        1000,
+        
+    ]}
+    wrapper="span"
+    speed={70}
+    style={{ fontSize: '1rem', color: '#ececf1', textAlign: 'center', gap: '10px', overflowWrap:'break-word', }}
+/></span>,
+    "What is your age?",
+    "Where are you from?",
+  ];
+  const handleResponseSubmit = (response) => {
+    setUserResponses([...userResponses, response]);
+    setCurrentQuestionIndex(currentQuestionIndex + 1);
   };
-
-  const handleEnterPress = (event) => {
-    if (event.key === "Enter") {
-      setDisplayedText(inputText);
-      setInputText("");
-    }
-};
     return (
         <div className='container'>
              <header className='q-header-class left-acc'>
@@ -3243,31 +3268,62 @@ const [displayedText, setDisplayedText] = useState("");
                 </div>
             </div>
             {/* <Right_part/> */}
+
+            
             
              <footer>
              {/* <div className="container">
         <input type="text" onChange={handleText} />
       </div>  */}
 
+<div className='container input--field p-3' style={{color:"white", marginLeft:"14rem", textAlign:"initial"}} >
+      {currentQuestionIndex < questions.length ? (
+        <div style={{marginTop:"2px", whiteSpace:"normal"}}>
+          {/* <p>{questions[currentQuestionIndex]}</p> */}
+          
+          {userResponses.map((response, index) => (
+            <div key={index}>
+              <p>
+                <strong>Response:</strong> {response}
+              </p>
+              {index === currentQuestionIndex - 1 &&
+                index < questions.length - 1 && (
+                  <p>
+                    <strong>Next Question:</strong> {questions[index + 1]}
+                  </p>
+                )}
+            </div>
+            
+          ))}
+          <input
+          type="text" className='input-field p-2'
+          readOnly= {true} placeholder='Enter the text here' ref = {inputRef}  
+            onKeyPress={(event) => {
+              if (event.key === "Enter") {
+                handleResponseSubmit(event.target.value);
+                event.target.value = ""; // Clear input field
+              }
+            }}
+          />
+        </div>
+      ) : (
+        <p>Questionnaire complete! Thank you for your responses.</p>
+      )}
+    </div>
+
       {/* <div className="text-container">{typeText}</div> */}
-      <div style={{color:"white", marginLeft:"14rem", textAlign:"initial"}} ref = {inputRef}> {displayedText && <p>  {displayedText}</p>}</div>
-    <div className='container input--field p-3' >
+       {/* <div style={{color:"white", marginLeft:"14rem", textAlign:"initial"}} ref = {inputRef}> {displayedText && <p>  {displayedText}</p>}</div>  */}
+    {/* <div className='container input--field p-3' >
       <input type="text" className='input-field p-2' value={inputText} onChange={handleInputChange} onKeyPress={handleEnterPress} 
       readOnly= {true} placeholder='Enter the text here' ref = {inputRef} />
-        {/* <input className='input-field p-2' type='text'  onChange={handleText} readOnly= {true} placeholder='Enter the text here' ref = {inputRef}></input> */}
-     
-         {/* <p className='bottom-text p-2'>
-        Our goal is to make the startup ecosystem systems more seamless. Your<a href='#'>feedback</a> will help us to improve.
-        </p>  */}
-    </div>
-    <div>
        
     </div>
-    <div className='bottom-position mt-5'>
+     */}
+    {/* <div className='bottom-position'>
     <p className='bottom-text'>
         Our goal is to make the startup ecosystem systems more seamless. Your<a href='#'>feedback</a> will help us to improve.
         </p>
-        </div>
+        </div> */}
     
 </footer> 
 

@@ -308,13 +308,29 @@
     
     
 }
-.input--field{
-    display:flex;
+.input--field::after{
+    /* display:grid; */
     justify-content: center;
     position: fixed;
     bottom:30px;
+    /* content: "";
+    display: table;
+    clear: both; */
+    display: flex;
+  flex-direction: column; /* or row, depending on your layout */
+  align-items: stretch;
+    
   
 }
+body {
+    overflow-x: hidden;
+  }
+/* .input--field::after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+  
 .input-field:focus{
     box-shadow: none;
     border-style:dotted;
