@@ -8,9 +8,9 @@ import { Link } from 'react-router-dom';
 //import Right_part from './Right_part';
 //import axios from "axios";
 // import openaiResources from 'openai/resources';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFolder, faTrashCan } from '@fortawesome/free-regular-svg-icons';
-import { faPlus, faPenToSquare, faFileLines } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faFolder, faTrashCan } from '@fortawesome/free-regular-svg-icons';
+// import { faPlus, faPenToSquare, faFileLines } from '@fortawesome/free-solid-svg-icons';
 function QnA_page() {
    
 
@@ -77,13 +77,7 @@ function QnA_page() {
     const [buttontv, setButtonTV] = useState("");
     const [buttonvideo, setButtonvideo] = useState("");
     const [buttonphoto, setButtonPhoto] = useState("");
-    //const [buttonbusiness, setButtonBusiness] = useState("");
-   
-
-
-    // function counter() {
-    //     setCount(prevCount => prevCount + 1);
-    // }
+    
 
     const ideaHandler = () => {
         setIdea(true);
