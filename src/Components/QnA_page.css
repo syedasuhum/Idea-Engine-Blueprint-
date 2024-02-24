@@ -38,7 +38,7 @@
 .qna-header{
     top: 0;
     height: 100vh;
-    width: 270px;
+    width: 250px;
     display: flex;
     position:fixed ;
     /* align-items: center; */
@@ -71,20 +71,20 @@
     position: relative;
     gap: 24px;
     color: #ddd;
-    padding: 32px 186px;
+    padding: 32px 20px;
     
     white-space: pre-line;
 }
 .qna-box{
     background-color: #121212;
-    width: 70%;
+    width: 80%;
     /* display: flex; */
     position: relative; 
     /* gap: 10px; */
     color: #ddd;
     padding: 32px 100px;
     /* white-space: pre-line; */
-    margin: auto;
+    margin: 1rem;
     text-align: center;
     
 }
@@ -246,9 +246,9 @@
     color: #ddd;
 }
 
-.row{
+/* .row{
     justify-content: center;
-}
+} */
 
 .q-delete {
     width: 100%;
@@ -294,11 +294,12 @@
 }
 
 .input-field{
-    width: 65%;
+    width: 82%;
     display: flex;
     min-height: 48px;
     gap: 12px;
     align-items: center;
+    /* text-align: center; */
     padding: 16;
     background: #222;
     border-radius: 8px;

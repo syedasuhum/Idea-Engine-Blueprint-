@@ -17,7 +17,7 @@ function QnA_page() {
     const [count, setCount] = useState(["Blueprint 1"]);
     const [print, setPrint] = useState(1);
 
-    const [idea, setIdea] = useState(false);
+    const [idea, setIdea] = useState("");
     const [startup, setStartup] = useState(false);
     const [brand, setBrand] = useState(false);
     const [digital, setDigital] = useState(false);
@@ -28,7 +28,6 @@ function QnA_page() {
     const [content, setContent] = useState(false);
     const [social, setSocial] = useState(false);
     const [performance, setPerformance] = useState(false);
-    const [SEO, setSEO] = useState(false);
     const [youtube, setYoutube] = useState(false);
     const [instagram, setInstagram] = useState(false);
     const [facebook, setFacebook] = useState(false);
@@ -47,73 +46,7 @@ function QnA_page() {
     const [tv, setTV] = useState(false);
     const [video, setvideo] = useState(false);
     const [photo, setPhoto] = useState(false);
-    const [youtubeq1, setYoutubeq1] = useState(false);
-    const [youtubeq2, setYoutubeq2] = useState(false);
-    const [youtubeq3, setYoutubeq3] = useState(false);
-    const [youtubeq4, setYoutubeq4] = useState(false);
-    const [youtubeq5, setYoutubeq5] = useState(false);
-    const [facebookq1, setFacebook1] = useState(false);
-    const [facebookq2, setFacebook2] = useState(false);
-    const [facebookq3, setFacebook3] = useState(false);
-    const [facebookq4, setFacebook4] = useState(false);
-    const [websiteq1, setWebsite1] = useState(false);
-    const [websiteq2, setWebsite2] = useState(false);
-    const [websiteq3, setWebsite3] = useState(false);
-    const [websiteq4, setWebsite4] = useState(false);
-    const [appq1, setAppq1] = useState(false);
-    const [appq2, setAppq2] = useState(false);
-    const [appq3, setAppq3] = useState(false);
-    const [appq4, setAppq4] = useState(false);
-    const [digitalprodq1, setDigitalprodq1] = useState(false);
-    const [digitalprodq2, setDigitalprodq2] = useState(false);
-    const [digitalprodq3, setDigitalprodq3] = useState(false);
-    const [digitalprodq4, setDigitalprodq4] = useState(false);
-    const [physicalprodq1, setPhysicalprodq1] = useState(false);
-    const [serviceq1, setServiceq1] = useState(false);
-    const [serviceq2, setServiceq2] = useState(false);
-    const [companyq1, setCompanyq1] = useState(false);
-    const [personalq1, setPersonalq1] = useState(false);
-    const [personalq2, setPersonalq2] = useState(false);
-    const [personalq3, setPersonalq3] = useState(false);
-    const [influencerq1, setInfluencerq1] = useState(false);
-    const [influencerq2, setInfluencerq2] = useState(false);
-    const [influencerq3, setInfluencerq3] = useState(false);
-    const [influencerq4, setInfluencerq4] = useState(false);
-    const [influencerq5, setInfluencerq5] = useState(false);
-    const [pressq1, setPressq1] = useState(false);
-    const [pressq2, setPressq2] = useState(false);
-    const [pressq3, setPressq3] = useState(false);
-    const [pressq4, setPressq4] = useState(false);
-    const [pressq5, setPressq5] = useState(false);
-    const [tvq1, setTVq1] = useState(false);
-    const [tvq2, setTVq2] = useState(false);
-    const [tvq3, setTVq3] = useState(false);
-    const [tvq4, setTVq4] = useState(false);
-    const [videoq1, setVideoq1] = useState(false);
-    const [videoq2, setVideoq2] = useState(false);
-    const [videoq3, setVideoq3] = useState(false);
-    const [videoq4, setVideoq4] = useState(false);
-    const [photoq1, setPhotoq1] = useState(false);
-    const [photoq2, setPhotoq2] = useState(false);
-    const [photoq3, setPhotoq3] = useState(false);
-    const [photoq4, setPhotoq4] = useState(false);
-    const [business, setBusiness] = useState(false);
-    const [d2c, setD2C] = useState(false);
-    const [b2c, setB2C] = useState(false);
-    const [b2b, setB2B] = useState(false);
-    const [independent, setIndependent] = useState(false);
-    const [d2cq1, setD2Cq1] = useState(false);
-    const [d2cq2, setD2Cq2] = useState(false);
-    const [d2cq3, setD2Cq3] = useState(false);
-    const [Vendor, setVendor] = useState(false);
-    const [yes, setYes] = useState(false);
-    const [no, setNo] = useState(false);
-    const [project, setProject] = useState(false);
-    const [yearly, setYearly] = useState(false);
-    const [halfyearly, setHalfyearly] = useState(false);
-    const [quarterly, setQuarterly] = useState(false);
-    const [projectq1, setProjectq1] = useState(false);
-    
+   
 
     const [buttonidea, setButtonidea] = useState("");
     const [buttonstartup, setButtonstartup] = useState("");
@@ -126,7 +59,6 @@ function QnA_page() {
     const [buttoncontent, setButtonContent] = useState("");
     const [buttonsocial, setButtonSocial] = useState("");
     const [buttonperformance, setButtonPerformance] = useState("");
-    const [buttonseo, setButtonSeo] = useState("");
     const [buttonyoutube, setButtonYoutube] = useState("");
     const [buttonfacebook, setButtonFacebook] = useState("");
     const [buttoninstagram, setButtonInstagram] = useState("");
@@ -146,16 +78,7 @@ function QnA_page() {
     const [buttonvideo, setButtonvideo] = useState("");
     const [buttonphoto, setButtonPhoto] = useState("");
     //const [buttonbusiness, setButtonBusiness] = useState("");
-    const [buttonb2b, setButtonB2B] = useState("");
-    const [buttonb2c, setButtonB2C] = useState("");
-    const [buttond2c, setButtonD2C] = useState("");
-    const [buttonindependent, setButtonIndependent] = useState("");
-    const [buttonyes, setButtonYes] = useState("");
-    const [buttonno, setButtonNo] = useState("");
-    const [buttonproject, setButtonProject] = useState("");
-    const [buttonyearly, setButtonYearly] = useState("");
-    const [buttonhalfyearly, setButtonHalfyearly] = useState("");
-    const [buttonquarterly, setButtonQuarterly] = useState("");
+   
 
 
     // function counter() {
@@ -289,32 +212,24 @@ function QnA_page() {
     const socialHandler = () => {
         setSocial(true);
         setPerformance(false);
-        setSEO(false);
+      
 
         setButtonSocial("#0060d0");
         setButtonPerformance(false);
-        setButtonSeo(false);
+       
     };
 
     const performanceHandler = () => {
         setSocial(false);
         setPerformance(true);
-        setSEO(false);
+       
 
         setButtonSocial(false);
         setButtonPerformance("#0060d0");
-        setButtonSeo(false);
+      
     };
 
-    const SEOHandler = () => {
-        setSocial(false);
-        setPerformance(false);
-        setSEO(true);
-
-        setButtonSocial(false);
-        setButtonPerformance(false);
-        setButtonSeo("#0060d0");
-    };
+    
 
     const youtubeHandler = () => {
         setFacebook(false);
@@ -471,238 +386,1336 @@ function QnA_page() {
         setButtonPhoto("#0060d0");
         setButtonvideo(false);
     };
-    const independentHandler = () => {
-        setB2B(false);
-        setB2C(false);
-        setD2C(false);
-        setIndependent(true)
-
-        setButtonIndependent("#0060d0");
-        setButtonB2B(false);
-        setButtonB2C(false);
-        setButtonD2C(false);
-    };
-    const b2bHandler = () => {
-        setB2B(true);
-        setB2C(false);
-        setD2C(false);
-        setIndependent(false);
-
-        setButtonB2B("#0060d0");
-        setButtonIndependent(false);
-        setButtonB2C(false);
-        setButtonD2C(false);
-    };
-    const b2cHandler = () => {
-        setB2B(false);
-        setB2C(true);
-        setD2C(false);
-        setIndependent(false);
-
-        setButtonB2C("#0060d0");
-        setButtonB2B(false);
-        setButtonIndependent(false);
-        setButtonD2C(false);
-    };
-    const d2bHandler = () => {
-        setB2B(false);
-        setB2C(false);
-        setD2C(true);
-        setIndependent(false);
-
-        setButtonD2C("#0060d0");
-        setButtonB2B(false);
-        setButtonB2C(false);
-        setButtonIndependent(false);
-    };
-    const yesHandler = () => {
-        setNo(false);
-        setYes(true);
-
-        setButtonYes("#0060d0");
-        setButtonNo(false);
-    };
-    const noHandler = () => {
-        setYes(false);
-        setNo(true);
-
-        setButtonNo("#0060d0");
-        setButtonYes(false);
-    };
     
-    const quarterlyHandler = () => {
-        setYearly(false);
-        setHalfyearly(false);
-        setQuarterly(true);
-        setProject(false);
-
-        setButtonQuarterly("#0060d0");
-        setButtonYearly(false);
-        setButtonHalfyearly(false);
-        setButtonProject(false);
-    };
-    const yearlyHandler = () => {
-        setQuarterly(false);
-        setHalfyearly(false);
-        setYearly(true);
-        setProject(false);
-
-        setButtonYearly("#0060d0");
-        setButtonQuarterly(false);
-        setButtonHalfyearly(false);
-        setButtonProject(false);
-    };
-    const halfyearlyHandler = () => {
-        setQuarterly(false);
-        setYearly(false);
-        setHalfyearly(true);
-        setProject(false);
-
-        setButtonHalfyearly("#0060d0");
-        setButtonYearly(false);
-        setButtonQuarterly(false);
-        setButtonProject(false);
-    };
-    const projectHandler = () => {
-        setYearly(false);
-        setHalfyearly(false);
-        setProject(true);
-        setQuarterly(false);
-
-        setButtonProject("#0060d0");
-        setButtonYearly(false);
-        setButtonHalfyearly(false);
-        setButtonQuarterly(false);
-    };
-   
-
-
-    function add() {
-        // console.log("before "+print)
-        setPrint((prev) => {
-            prev = prev + 1;
-            setCount([...count, `Blueprint ${prev}`])
-            return prev;
-        })
-        console.log(count);
-    }
 
 // blueprint Increment button
     const [clownCounter, setClownCounter] = React.useState(1);
     
-    function onChangeForm() {
-
-    }
-
-    function addClown(event) {
-        event.preventDefault();
-        setClownCounter(prev=> prev+1);
-    }
-    
     console.log(clownCounter);
 
 // Input field 
-const inputRef = useRef(null);
+//const inputRef = useRef(null);
 const inputFunction = () =>{
 
-    if (inputRef.current) {
-        inputRef.current.readOnly = false;
-        inputRef.current.focus();
-      }
+    // if (inputRef.current) {
+    //     inputRef.current.readOnly = false;
+    //     //inputRef.current.focus();
+    //   }
 };
 
-//input display
-//const [typeText, setTypeText] = React.useState("");
-
-//   function handleText(event) {
-//     setTypeText(event.target.value);
-//   }
-
-
-//const [inputText, setInputText] = useState("");
-//const [displayedText, setDisplayedText] = useState("");
-
-//   const handleInputChange = (event) => {
-//     setInputText(event.target.value);
-//   };
-
-//   const handleEnterPress = (event) => {
-//     if (event.key === "Enter") {
-//       setDisplayedText(inputText);
-//       setInputText("");
-//     }
-// };
 // For Question and Answer
 
 const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 const [userResponses, setUserResponses] = useState([]);
 
-const questions = [
-    "",
-    <span style={{width:'200px'}}> <TypeAnimation
-    sequence={[
-        // Same substring at the start will only be typed out once, initially
-        'What type of content and messaging will resonate with your audience (For example, product reviews, sponsored content, giveaways)',
-        1000,
-        
-    ]}
-    wrapper="span"
-    speed={70}
-    style={{ fontSize: '1rem', color: '#ececf1', textAlign: 'center', gap: '10px', overflowWrap:'break-word', }}
-/></span>,
-    "What is your age?",
-    "Where are you from?",
+const youtube_ques=[
+
+   
+    <div className='bussiness' >
+    <div className='logo'>
+        <img src='./images/logo.png' alt=''></img>
+    </div>
+    <span> <TypeAnimation
+        sequence={[
+            // youtube q1
+            ' What are your overall goals for Youtube marketing? (For example, increasing brand awareness, build a community, generating leads)',
+            1000,
+        ]}
+        wrapper="span"
+        speed={70}
+        style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+    /></span>
+</div>,
+ <div className='bussiness' >
+ <div className='logo'>
+     <img src='./images/logo.png' alt=''></img>
+ </div>
+ <span> <TypeAnimation
+     sequence={[
+         // youtube q2
+         'What type of content will resonate best with your target audience on YouTube? (For example, tutorials, product reviews, Vlogs)',
+         1000,
+     ]}
+     wrapper="span"
+     speed={70}
+     style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+ /></span>
+</div>,
+    <div className='bussiness' >
+    <div className='logo'>
+        <img src='./images/logo.png' alt=''></img>
+    </div>
+    <span> <TypeAnimation
+        sequence={[
+            // youtube q3
+            'What do you want your audience to do you once they come across your page (For Eg. Buy, Subscribe etc)',
+            1000,
+        ]}
+        wrapper="span"
+        speed={70}
+        style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+    /></span>
+   </div>,
+   <div className='bussiness' >
+   <div className='logo'>
+       <img src='./images/logo.png' alt=''></img>
+   </div>
+   <span> <TypeAnimation
+       sequence={[
+           // youtube q4
+           'Where does your audience lie geographically (For Eg. Is there a particular city/state/country youre targeting)?',
+           1000,
+       ]}
+       wrapper="span"
+       speed={70}
+       style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+   /></span>
+  </div>,
+  <div className='bussiness' >
+  <div className='logo'>
+      <img src='./images/logo.png' alt=''></img>
+  </div>
+  <span> <TypeAnimation
+      sequence={[
+          // youtube q5
+          'How long do you want your Social Strategy Calendar to be (For Eg. 2 Weeks, 1 Month, 3 months etc)',
+          1000,
+      ]}
+      wrapper="span"
+      speed={70}
+      style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+  /></span>
+ </div>,
+ <div className='bussiness' >
+ <div className='logo'>
+     <img src='./images/logo.png' alt=''></img>
+ </div>
+ <span> <TypeAnimation
+     sequence={[
+        // youtube 6
+          'What is your total budget?',
+         1000,
+     ]}
+     wrapper="span"
+     speed={70}
+     style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+ /></span>
+</div>,
+  
+];
+
+const influencer_ques = [
+    
+    <div className='bussiness' >
+    <div className='logo'>
+        <img src='./images/logo.png' alt=''></img>
+    </div>
+    <span> <TypeAnimation
+        sequence={[
+            // Influencer start
+            'What are your goals for influencer marketing?(For example, increasing brand awareness, driving product sales, expanding reach)',
+            1000,
+        ]}
+        wrapper="span"
+        speed={70}
+        style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+    /></span>
+</div>,  
+    
+<div className='bussiness' >
+    <div className='logo'>
+        <img src='./images/logo.png' alt=''></img>
+    </div>
+    <span> <TypeAnimation
+        sequence={[
+            // Influencer q1
+            'What type of content and messaging will resonate with your audience (For example, product reviews, sponsored content, giveaways)',
+            1000,
+        ]}
+        wrapper="span"
+        speed={70}
+        style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+    /></span>
+</div>,
+ <div className='bussiness' >
+ <div className='logo'>
+     <img src='./images/logo.png' alt=''></img>
+ </div>
+ <span> <TypeAnimation
+     sequence={[
+         // Influencer q2
+         'What do you want your viewers to FEEL after looking at your influencer posts (For Eg. Fomo, Desire etc) ?',
+         1000,
+     ]}
+     wrapper="span"
+     speed={70}
+     style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+ /></span>
+</div>,
+    <div className='bussiness' >
+    <div className='logo'>
+        <img src='./images/logo.png' alt=''></img>
+    </div>
+    <span> <TypeAnimation
+        sequence={[
+            // Influencer q3
+            'What do you want your viewers to DOccc (For eg. Buy Now, Visit store, Like etc)?',
+            1000,
+        ]}
+        wrapper="span"
+        speed={70}
+        style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+    /></span>
+   </div>,
+   <div className='bussiness' >
+   <div className='logo'>
+       <img src='./images/logo.png' alt=''></img>
+   </div>
+   <span> <TypeAnimation
+       sequence={[
+           // Influencer q4
+           'What is the total timeline for executing the campaign (For Eg. 2 Weeks, 3 months etc)',
+           1000,
+       ]}
+       wrapper="span"
+       speed={70}
+       style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+   /></span>
+  </div>,
+  <div className='bussiness' >
+  <div className='logo'>
+      <img src='./images/logo.png' alt=''></img>
+  </div>
+  <span> <TypeAnimation
+      sequence={[
+          // Influencer q5
+          'What is the total budget (Please be realistic here) ?',
+          1000,
+      ]}
+      wrapper="span"
+      speed={70}
+      style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+  /></span>
+ </div>
+    
   ];
+
+  const facebook_ques = [
+    
+    <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // facebook start
+                'What are your overall goals for FB marketing? (For example, increasing brand awareness, driving engagement, generating leads)',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+    </div>,       
+    <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // facebook q1
+                'What do you want your audience to do you once they come across your page (For Eg. Buy, Subscribe etc)',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+    </div>,
+     <div className='bussiness' >
+     <div className='logo'>
+         <img src='./images/logo.png' alt=''></img>
+     </div>
+     <span> <TypeAnimation
+         sequence={[
+             // facebook q2
+             'Where does your audience lie geographically (For Eg. Is there a particular city/state/country youre targeting)?',
+             1000,
+         ]}
+         wrapper="span"
+         speed={70}
+         style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+     /></span>
+    </div>,
+        <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // facebook q3
+                'How long do you want your Social Strategy Calendar to be (For Eg. 2 Weeks, 1 Month, 3 months etc)',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+       </div>,
+       <div className='bussiness' >
+       <div className='logo'>
+           <img src='./images/logo.png' alt=''></img>
+       </div>
+       <span> <TypeAnimation
+           sequence={[
+               // facebook q4
+               'What is your total budget?',
+               1000,
+           ]}
+           wrapper="span"
+           speed={70}
+           style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+       /></span>
+      </div>,    
+ ];
+
+const instagram_ques = [
+        
+        <div className='bussiness' >
+            <div className='logo'>
+                <img src='./images/logo.png' alt=''></img>
+            </div>
+            <span> <TypeAnimation
+                sequence={[
+                    // instagram start
+                    'What are your overall goals for Instagram marketing? (For example, increasing brand awareness, driving engagement, generating leads)',
+                    1000,
+                ]}
+                wrapper="span"
+                speed={70}
+                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+            /></span>
+        </div>,  
+            
+        <div className='bussiness' >
+            <div className='logo'>
+                <img src='./images/logo.png' alt=''></img>
+            </div>
+            <span> <TypeAnimation
+                sequence={[
+                    // instagram q1
+                    'What do you want your audience to do you once they come across your page (For Eg. Buy, Subscribe etc)',
+                    1000,
+                ]}
+                wrapper="span"
+                speed={70}
+                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+            /></span>
+        </div>,
+         <div className='bussiness' >
+         <div className='logo'>
+             <img src='./images/logo.png' alt=''></img>
+         </div>
+         <span> <TypeAnimation
+             sequence={[
+                 // instagram q2
+                 'Where does your audience lie geographically (For Eg. Is there a particular city/state/country youre targeting)?',
+                 1000,
+             ]}
+             wrapper="span"
+             speed={70}
+             style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+         /></span>
+        </div>,
+            <div className='bussiness' >
+            <div className='logo'>
+                <img src='./images/logo.png' alt=''></img>
+            </div>
+            <span> <TypeAnimation
+                sequence={[
+                    // instagram q3
+                    'How long do you want your Social Strategy Calendar to be (For Eg. 2 Weeks, 1 Month, 3 months etc)',
+                    1000,
+                ]}
+                wrapper="span"
+                speed={70}
+                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+            /></span>
+           </div>,
+           <div className='bussiness' >
+           <div className='logo'>
+               <img src='./images/logo.png' alt=''></img>
+           </div>
+           <span> <TypeAnimation
+               sequence={[
+                   // instagram q4
+                   'What is your total budget?',
+                   1000,
+               ]}
+               wrapper="span"
+               speed={70}
+               style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+           /></span>
+          </div>,
+        
+ ];
+const youtubeads_ques = [
+        
+            <div className='bussiness' >
+                <div className='logo'>
+                    <img src='./images/logo.png' alt=''></img>
+                </div>
+                <span> <TypeAnimation
+                    sequence={[
+                        // instagram start
+                        'What are the specific goals (KPIs) for your Youtube Ads campaigns (For Eg. Increase website traffic or generate leads)?',
+                        1000,
+                    ]}
+                    wrapper="span"
+                    speed={70}
+                    style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+                /></span>
+            </div>,  
+          
+            
+    ];
+    const googleques = [
+        
+            <div className='bussiness' >
+                <div className='logo'>
+                    <img src='./images/logo.png' alt=''></img>
+                </div>
+                <span> <TypeAnimation
+                    sequence={[
+                        'What are the specific goals for your Google Ads campaigns (For Eg. Increase website traffic or generate leads)?',
+                        1000,
+                    ]}
+                    wrapper="span"
+                    speed={70}
+                    style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+                /></span>
+            </div>,   
+            
+    ];
+    const instagramads_ques = [
+        
+        <div className='bussiness' >
+            <div className='logo'>
+                <img src='./images/logo.png' alt=''></img>
+            </div>
+            <span> <TypeAnimation
+                sequence={[
+                    'What are your specific goals for Instagram ads? (For eg. increasing brand awareness, driving website traffic, boosting conversions)',
+                    1000,
+                ]}
+                wrapper="span"
+                speed={70}
+                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+            /></span>
+        </div>,   
+        
+];
+const website_ques = [
+    
+    <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // website start
+                'What is the name of the website (For Eg. disco.com) ?',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+    </div>,       
+    <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // website q1
+                'What will be the key features or functions of the website?',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+    </div>,
+     <div className='bussiness' >
+     <div className='logo'>
+         <img src='./images/logo.png' alt=''></img>
+     </div>
+     <span> <TypeAnimation
+         sequence={[
+             // website q2
+             'What do you want your users to do on the site (For Eg. Order Food, Buy Clothes etc) ?',
+             1000,
+         ]}
+         wrapper="span"
+         speed={70}
+         style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+     /></span>
+    </div>,
+        <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // website q3
+                'What will be your business model for the website (For Eg. Single Purchases, Subscriptions, Bulk Orders etc) ?',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+       </div>,
+       <div className='bussiness' >
+       <div className='logo'>
+           <img src='./images/logo.png' alt=''></img>
+       </div>
+       <span> <TypeAnimation
+           sequence={[
+               // websiteq4
+               'What is the budget & timeline (For eg. $15000 & 4 weeks) ?',
+               1000,
+           ]}
+           wrapper="span"
+           speed={70}
+           style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+       /></span>
+      </div>,    
+ ];
+
+ const app_ques = [
+    
+    <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // app start
+                'What is the name of the app (For Eg. Dunzo, Zomato etc)',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+    </div>,       
+    <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // app q1
+                'What will be the key features or functions of the app?',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+    </div>,
+     <div className='bussiness' >
+     <div className='logo'>
+         <img src='./images/logo.png' alt=''></img>
+     </div>
+     <span> <TypeAnimation
+         sequence={[
+             // app q2
+             'What do you want your users to do on the app (For Eg. Order Food, Buy Clothes etc) ?',
+             1000,
+         ]}
+         wrapper="span"
+         speed={70}
+         style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+     /></span>
+    </div>,
+        <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // app q3
+                'What will be your business model for the app (For Eg. Single Purchases, Subscriptions, Bulk Orders etc) ?',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+       </div>,
+       <div className='bussiness' >
+       <div className='logo'>
+           <img src='./images/logo.png' alt=''></img>
+       </div>
+       <span> <TypeAnimation
+           sequence={[
+               // app q4
+               'What is the budget & timeline (For eg. $15000 & 4 weeks) ?',
+               1000,
+           ]}
+           wrapper="span"
+           speed={70}
+           style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+       /></span>
+      </div>,    
+ ];
+ const digitalprod_ques = [
+    
+    <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // digital product start
+                'What is the core purpose and value proposition of your tech product?',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+    </div>,       
+    <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // digital product q1
+                'How do you want your tech product brand to be perceived in the market?',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+    </div>,
+     <div className='bussiness' >
+     <div className='logo'>
+         <img src='./images/logo.png' alt=''></img>
+     </div>
+     <span> <TypeAnimation
+         sequence={[
+             // digital product q2
+             'What key brand attributes and messaging will resonate with your target audience? (For Eg. Speed, security etc)',
+             1000,
+         ]}
+         wrapper="span"
+         speed={70}
+         style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+     /></span>
+    </div>,
+        <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // digital product q4
+                'What is your total timeline for executing the branding exercise (For Eg. 2 weeks, 1 Month etc)',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+       </div>,
+       <div className='bussiness' >
+       <div className='logo'>
+           <img src='./images/logo.png' alt=''></img>
+       </div>
+       <span> <TypeAnimation
+           sequence={[
+               // digital product q4
+               'What is the total budget for executing the branding exercise?',
+               1000,
+           ]}
+           wrapper="span"
+           speed={70}
+           style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+       /></span>
+      </div>,    
+ ];
+ const physical_ques = [
+    
+    <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // physical product start
+                'What is the unique selling point or key feature of your physical product?',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+    </div>,       
+    <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // physical product q1
+                'How do you want your physical product brand to be perceived in the market?',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+    </div>,
+     <div className='bussiness' >
+     <div className='logo'>
+         <img src='./images/logo.png' alt=''></img>
+     </div>
+     <span> <TypeAnimation
+         sequence={[
+             // physical product q2
+             'What key brand attributes and messaging will resonate with your target audience? (For Eg. Speed, security etc)',
+             1000,
+         ]}
+         wrapper="span"
+         speed={70}
+         style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+     /></span>
+    </div>,
+        <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // physical product q4
+                'What is your total timeline for executing the branding exercise (For Eg. 2 weeks, 1 Month etc)',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+       </div>,
+       <div className='bussiness' >
+       <div className='logo'>
+           <img src='./images/logo.png' alt=''></img>
+       </div>
+       <span> <TypeAnimation
+           sequence={[
+               // physical product q4
+               'What is the total budget for executing the branding exercise?',
+               1000,
+           ]}
+           wrapper="span"
+           speed={70}
+           style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+       /></span>
+      </div>,    
+ ];
+ const service_ques = [
+    
+    <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // service  start
+                'What are the core values and personality traits that you want your brand to embody?',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+    </div>,       
+    
+     <div className='bussiness' >
+     <div className='logo'>
+         <img src='./images/logo.png' alt=''></img>
+     </div>
+     <span> <TypeAnimation
+         sequence={[
+             // service q2
+             'What is the desired perception and emotional connection you want to establish with your target audience?',
+             1000,
+         ]}
+         wrapper="span"
+         speed={70}
+         style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+     /></span>
+    </div>,
+        <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // service q3
+                'What is your total timeline for executing the branding exercise (For Eg. 2 weeks, 1 Month etc)',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+       </div>,
+       
+ ];
+
+ const company_ques = [
+    
+    <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // company start
+                'What is the unique value proposition or core message of your company?',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+    </div>,       
+    
+     <div className='bussiness' >
+     <div className='logo'>
+         <img src='./images/logo.png' alt=''></img>
+     </div>
+     <span> <TypeAnimation
+         sequence={[
+             // company q1
+             'What are the key personality traits and qualities you want your brand to convey?',
+             1000,
+         ]}
+         wrapper="span"
+         speed={70}
+         style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+     /></span>
+    </div>,
+        <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // company q2
+                'What is your total timeline for executing the branding exercise (For Eg. 2 weeks, 1 Month etc)',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+       </div>,
+       
+ ];
+ const personal_ques = [
+    
+    <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // personal start
+                'What is the desired perception or emotional response you want to evoke in your target audience?',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+    </div>,       
+    
+     <div className='bussiness' >
+     <div className='logo'>
+         <img src='./images/logo.png' alt=''></img>
+     </div>
+     <span> <TypeAnimation
+         sequence={[
+             // personal q1
+             'What channels and platforms will you use to showcase your personal brand and engage with your target audience?',
+             1000,
+         ]}
+         wrapper="span"
+         speed={70}
+         style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+     /></span>
+    </div>,
+        <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // personal q2
+                'What is your budget for the entire branding exercise?',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+       </div>,
+       <div className='bussiness' >
+       <div className='logo'>
+           <img src='./images/logo.png' alt=''></img>
+       </div>
+       <span> <TypeAnimation
+           sequence={[
+               // personal q3
+               'What is the total timeline for performing this exercise?',
+               1000,
+           ]}
+           wrapper="span"
+           speed={70}
+           style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+       /></span>
+      </div>,
+       
+ ];
+ const press_ques = [
+    
+    <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // personal start
+                'What is the core purpose and value proposition of your tech product?',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+    </div>,       
+    
+     <div className='bussiness' >
+     <div className='logo'>
+         <img src='./images/logo.png' alt=''></img>
+     </div>
+     <span> <TypeAnimation
+         sequence={[
+             // press q1
+             'What are the specific goals and objectives of your marketing campaign? (For example, to increase brand awareness, and generate leads etc)',
+             1000,
+         ]}
+         wrapper="span"
+         speed={70}
+         style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+     /></span>
+    </div>,
+        <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // press q2
+                'What is the desired reputation or perception you want to build through PR efforts?',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+       </div>,
+       <div className='bussiness' >
+       <div className='logo'>
+           <img src='./images/logo.png' alt=''></img>
+       </div>
+       <span> <TypeAnimation
+           sequence={[
+               // press q3
+               'What key messages and stories do you want to convey to the public and media?',
+               1000,
+           ]}
+           wrapper="span"
+           speed={70}
+           style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+       /></span>
+      </div>,
+        <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // press q4
+                'What type of media channels do you wish to focus on most for reaching your target audience (For Eg. Fashion Magazines, Finance Articles etc)',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+       </div>,
+           <div className='bussiness' >
+           <div className='logo'>
+               <img src='./images/logo.png' alt=''></img>
+           </div>
+           <span> <TypeAnimation
+               sequence={[
+                   // press q5
+                   'What do you want your viewers to DO (For eg. Buy Now, Visit store, Like etc)?',
+                   1000,
+               ]}
+               wrapper="span"
+               speed={70}
+               style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+           /></span>
+          </div>,
+          <div className='bussiness' >
+          <div className='logo'>
+              <img src='./images/logo.png' alt=''></img>
+          </div>
+          <span> <TypeAnimation
+              sequence={[
+                  // press q6
+                  'What is the total timeline for executing the campaign (For Eg. 2 Weeks, 3 months etc)',
+                  1000,
+              ]}
+              wrapper="span"
+              speed={70}
+              style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+          /></span>
+         </div>,
+           <div className='bussiness' >
+           <div className='logo'>
+               <img src='./images/logo.png' alt=''></img>
+           </div>
+           <span> <TypeAnimation
+               sequence={[
+                   // press q7
+                   'What is the total budget (Please be realistic here) ?',
+                   1000,
+               ]}
+               wrapper="span"
+               speed={70}
+               style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+           /></span>
+          </div>,
+          
+ ];
+ 
+ const tv_ques = [
+    
+    <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // tv start
+                'What specific product/service/event etc do you wish to do PR for (For Eg. Product Launch, Event Release etc)',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+    </div>,       
+    
+     <div className='bussiness' >
+     <div className='logo'>
+         <img src='./images/logo.png' alt=''></img>
+     </div>
+     <span> <TypeAnimation
+         sequence={[
+             // tv q1
+             'What specific goals and objectives do you want to achieve? (For example, increase brand visibility and credibility, drive website traffic)',
+             1000,
+         ]}
+         wrapper="span"
+         speed={70}
+         style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+     /></span>
+    </div>,
+        <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // tv q2
+                'Which TV and radio channels or stations are most relevant ? (For example, national broadcast networks, popular local radio stations)',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+       </div>,
+       <div className='bussiness' >
+       <div className='logo'>
+           <img src='./images/logo.png' alt=''></img>
+       </div>
+       <span> <TypeAnimation
+           sequence={[
+               // tv q3
+               'What key messages and stories do you want to convey? (For example, highlighting the features and benefits of your product, sharing customer testimonials etc)',
+               1000,
+           ]}
+           wrapper="span"
+           speed={70}
+           style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+       /></span>
+      </div>,
+        <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // tv q4
+                'What do you want your viewers to DO (For eg. Buy Now, Search Name, Like etc)?',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+       </div>,
+         <div className='bussiness' >
+         <div className='logo'>
+             <img src='./images/logo.png' alt=''></img>
+         </div>
+         <span> <TypeAnimation
+             sequence={[
+                 // tv q5
+                 'What key messages and stories do you want to convey? (For example, highlighting the features and benefits of your product, sharing customer testimonials etc)',
+                 1000,
+             ]}
+             wrapper="span"
+             speed={70}
+             style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+         /></span>
+        </div>,
+        <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // tv q6
+                'What is the total budget (Please be realistic here) ?',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+       </div>,
+        
+       
+ ];
+ const photo_ques = [
+    
+    <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // photo start
+                'Which type of images do you wish to get shot (For Eg. Model, Food Photography, Product Usage etc)',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+    </div>,       
+    
+     <div className='bussiness' >
+     <div className='logo'>
+         <img src='./images/logo.png' alt=''></img>
+     </div>
+     <span> <TypeAnimation
+         sequence={[
+             // photo q1
+             'What key message do you want to convey through the photo (For Eg. Zara - New fashion line launch) ?',
+             1000,
+         ]}
+         wrapper="span"
+         speed={70}
+         style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+     /></span>
+    </div>,
+        <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // photo q2
+                'What do you want your viewers to feel after looking at the images (For Eg. Fomo, Desire etc) ?',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+       </div>,
+       <div className='bussiness' >
+       <div className='logo'>
+           <img src='./images/logo.png' alt=''></img>
+       </div>
+       <span> <TypeAnimation
+           sequence={[
+               // photo q3
+               'What do you want your viewers to do after looking at the image (For eg. Buy Now, Visit store, Like etc)?',
+               1000,
+           ]}
+           wrapper="span"
+           speed={70}
+           style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+       /></span>
+      </div>,
+       <div className='bussiness' >
+       <div className='logo'>
+           <img src='./images/logo.png' alt=''></img>
+       </div>
+       <span> <TypeAnimation
+           sequence={[
+               // photo q5
+               'What is the total budget (Please be realistic here) ?',
+               1000,
+           ]}
+           wrapper="span"
+           speed={70}
+           style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+       /></span>
+      </div>,
+       
+ ];
+ const video_ques = [
+    
+    <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // video start
+                'Which type of video do you wish to shoot (For Eg. Music Video, Ad Film, Social Media Content etc)',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+    </div>,       
+    
+     <div className='bussiness' >
+     <div className='logo'>
+         <img src='./images/logo.png' alt=''></img>
+     </div>
+     <span> <TypeAnimation
+         sequence={[
+             // video q1
+             'What key messages or story do you want to convey through the video?',
+             1000,
+         ]}
+         wrapper="span"
+         speed={70}
+         style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+     /></span>
+    </div>,
+        <div className='bussiness' >
+        <div className='logo'>
+            <img src='./images/logo.png' alt=''></img>
+        </div>
+        <span> <TypeAnimation
+            sequence={[
+                // video q2
+                'What do you want your viewers to feel after watching the video (For Eg. Fomo, Empathy etc) ?',
+                1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+        /></span>
+       </div>,
+       <div className='bussiness' >
+       <div className='logo'>
+           <img src='./images/logo.png' alt=''></img>
+       </div>
+       <span> <TypeAnimation
+           sequence={[
+               // video q3
+               'What do you want your viewers to do after watching the video (For eg. Buy Now, Visit store, Like etc)?',
+               1000,
+           ]}
+           wrapper="span"
+           speed={70}
+           style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+       /></span>
+      </div>,
+       <div className='bussiness' >
+       <div className='logo'>
+           <img src='./images/logo.png' alt=''></img>
+       </div>
+       <span> <TypeAnimation
+           sequence={[
+               // video q4
+               'What is the total timeline for executing the video (For Eg. 2 Weeks, 3 months etc)',
+               1000,
+           ]}
+           wrapper="span"
+           speed={70}
+           style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+       /></span>
+      </div>,
+      <div className='bussiness' >
+      <div className='logo'>
+          <img src='./images/logo.png' alt=''></img>
+      </div>
+      <span> <TypeAnimation
+          sequence={[
+              // video q5
+              'What is the total budget (Please be realistic here) ?',
+              1000
+          ]}
+          wrapper="span"
+          speed={70}
+          style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
+      /></span>
+     </div>,
+       
+ ];
+ 
+
+          
   const handleResponseSubmit = (response) => {
     setUserResponses([...userResponses, response]);
     setCurrentQuestionIndex(currentQuestionIndex + 1);
   };
     return (
         <div className='container'>
-             <header className='q-header-class left-acc'>
-                <section className='logo1'>
-                    <img src='./images/logo.png' alt=''></img>
-                    <p>TenMarket</p>
-                </section>
-                <Link to="/QnA_page" style={{ padding: '0 18px' }}>
-                    <button  onClick={addClown} className='new-btn mt-4' >
-                        <FontAwesomeIcon icon={faPlus} ></FontAwesomeIcon>Add Blueprint</button></Link>
-
-                <div style={{ padding: '0 18px', marginBottom: "120px" }}>
-                    <p className='draft mt-3'>DRAFTS</p>
-                   
-            <div>
-                 
-                {Array.from({ length: clownCounter}, (_unused, index) => index + 1).map(
-                    (clownIndex) => {
-                        const clownid = `${clownIndex}`;
-                        return (
-                        <div key={clownid } className="main-btn mt-2">
-                             <FontAwesomeIcon icon={faFileLines} />
-                            <label htmlFor={clownid } className='main-btn'>Blueprint {clownIndex}</label>
-                            <FontAwesomeIcon icon={faPenToSquare} />
-                            <FontAwesomeIcon icon={faTrashCan} />
-                        </div>
-                        )
-                    })
-                }
-                 
-            </div>
-        
-                    <div className='divider'></div>
-                    <p className='draft mt-3' style={{ marginBottom: '0px' }}>GENERATED BLUEPRINTS</p>
-
-                    <button type='button' className='new-btn mt-3'><FontAwesomeIcon icon={faFolder} ></FontAwesomeIcon>Standard</button>
-                    <button type='button' className='new-btn mt-3'><FontAwesomeIcon icon={faFolder} ></FontAwesomeIcon>Upgraded</button>
-                    
-                </div>
-
-                {/* </div> */}
-                <div className='del-position'>
-                    <button type='button' className='q-delete mt-3'><FontAwesomeIcon icon={faTrashCan} ></FontAwesomeIcon>Clear drafts</button>
-                </div>
-
-            </header>
+            
            
             {/* <Left_part data={{clownCounter}}/> */}
 
@@ -710,14 +1723,18 @@ const questions = [
             <div className='row mt-2'>
                 <div className='col-lg-9 col-md-8 col-12'>
                     <div class="blue">
-                        <h3>Blueprint {clownCounter}</h3>
+                    <section className='logo1'>
+                    <img src='./images/logo.png' alt=''></img>
+                    <p>TenMarket</p>
+                </section>
+                        {/* <h3>Blueprint {clownCounter}</h3> */}
                         <div className='pro-algin'>
                         <span className='qna-free'>Free</span>
                         <span className='qna-pro'>Pro</span>
                         <span className='qna-pro'>Premium</span>
                     </div>
                     </div>
-                    
+                     
                     <div className='mydivider mt-5'></div>
                     <div className='bussiness' style={{ padding: "32px 10px" }}>
                         <div className='logo'>
@@ -736,7 +1753,7 @@ const questions = [
                     </div>
                 </div>
 
-                <div className='row qna-box' style={{ width: "70%" }}>
+                <div className='row qna-box'>
                     <div className='col-lg-4 col-md-6 col-12' onClick={ideaHandler}>
                         <div className='qna-border' style={{ border: buttonidea }}>
                             <img src='./images/stage_idea.png' alt=''></img>
@@ -861,7 +1878,7 @@ const questions = [
 
                             </div>
                             <div className='col-lg-4 col-md-6 col-12' onClick={influencerHandler}>
-                                <div className='qna-border' style={{ border: buttoninfluencer }} onClick={inputFunction}>
+                                <div className='qna-border' style={{ border: buttoninfluencer }}>
                                     <img src='./images/influencer_marketing.png' alt=''></img>
                                     <div className='mydivider mt-4'></div>
                                     <p className='qna-text'>Influencer Marketing</p>
@@ -1134,11 +2151,7 @@ const questions = [
                                 </div>
 
                             </div>
-                            <div className='col-lg-4 col-md-6 col-12' onClick={SEOHandler}>
-                                <div className='digital-text' style={{ backgroundColor: buttonseo }}>
-                                    <p>SEO, ASO & SEM</p>
-                                </div>
-                            </div>
+                           
                         </div>
 
                     </div>
@@ -1226,24 +2239,42 @@ const questions = [
 
                 {/* influencer */}
                 {influencer && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What are your goals for influencer marketing?(For example, increasing brand awareness, driving product sales, expanding reach)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-                           <div></div>
-                    </div>
+                     <div className='container input--field p-3' style={{ color: "white", textAlign: "initial" }}>
+                     {currentQuestionIndex < influencer_ques.length ? (
+                         <div style={{ marginTop: "2px", whiteSpace: "normal" }}>
+                             <p>{influencer_ques[currentQuestionIndex]}</p>
+
+                             {userResponses.map((response, index) => (
+
+                                 <div key={index}>
+
+                                     <p>
+                                         <strong>Response:</strong> {response}
+                                     </p>
+                                     {/* {index === currentQuestionIndex - 1 &&  */}
+                                     {index < influencer_ques.length - 1 && (
+                                         <p>
+                                             <strong></strong> {influencer_ques[index + 1]}
+                                         </p>
+                                     )}
+                                 </div>
+
+                             ))}
+                             <input
+                                 type="text" className='input-field p-2'
+                                  placeholder='Enter the text here' 
+                                 onKeyPress={(event) => {
+                                     if (event.key === "Enter") {
+                                         handleResponseSubmit(event.target.value);
+                                         event.target.value = ""; // Clear input field
+                                     }
+                                 } } />
+                         </div>
+                     ) : (
+                         <p>Questionnaire complete! Thank you for your responses.</p>
+                     )}
+                 </div>
+                    
                 )}
 
                 {/* public relation */}
@@ -1337,7 +2368,7 @@ const questions = [
                         <div className='row qna-box'>
                             <div className='col-lg-4 col-md-6 col-12' >
                                 <div className='digital-text' onClick={youtubeHandler} style={{ backgroundColor: buttonyoutube }}>
-                                    <p onClick={inputFunction}>Youtube</p>
+                                    <p>Youtube</p>
                                 </div>
                             </div>
                             <div className='col-lg-4 col-md-6 col-12'>
@@ -1393,226 +2424,328 @@ const questions = [
                     </div>
                 )}
 
-                {/* SEO, ASO & SEM */}
-                {SEO && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'Do you have a particular preference in mind?. If not, just click on “Generate Now”, we’ll take care of the rest)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                        <div className='row qna-box'>
-                            <div className='col-lg-4 col-md-6 col-12'>
-                                <div className='digital-text'>
-                                    <p>On Page SEO</p>
-                                </div>
-                            </div>
-                            <div className='col-lg-4 col-md-6 col-12'>
-                                <div className='digital-text'>
-                                    <p>Off Page SEO</p>
-                                </div>
-                            </div>
-                            <div className='col-lg-4 col-md-6 col-12'>
-                                <div className='digital-text'>
-                                    <p>Local SEO</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='row qna-box mt-0'>
-                            <div className='col-lg-4 col-md-6 col-12'>
-                                <div className='digital-text'>
-                                    <p>Technical SEO</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                )}
+               
             
                  {/* Youtube */}
                  {youtube && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What are your overall goals for Youtube marketing? (For example, increasing brand awareness, build a community, generating leads)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
+                    <>
+                    <div className='container input--field p-3' style={{ color: "white", textAlign: "initial" }}>
+                        {currentQuestionIndex < youtube_ques.length ? (
+                            <div style={{ marginTop: "2px", whiteSpace: "normal" }}>
+                                <p>{youtube_ques[currentQuestionIndex]}</p>
 
-                    </div>
-                )}
+                                {userResponses.map((response, index) => (
+
+                                    <div key={index}>
+
+                                        <p>
+                                            <strong>Response:</strong> {response}
+                                        </p>
+                                        {/* {index === currentQuestionIndex - 1 &&  */}
+                                        {index < youtube_ques.length - 1 && (
+                                            <p>
+                                                <strong></strong> {youtube_ques[index + 1]}
+                                            </p>
+                                        )}
+                                    </div>
+
+                                ))}
+                                <input
+                                    type="text" className='input-field p-2'
+                                     placeholder='Enter the text here' 
+                                    onKeyPress={(event) => {
+                                        if (event.key === "Enter") {
+                                            handleResponseSubmit(event.target.value);
+                                            event.target.value = ""; // Clear input field
+                                        }
+                                    } } />
+                            </div>
+                        ) : (
+                            <p>Questionnaire complete! Thank you for your responses.</p>
+                        )}
+                    </div></>
+
+                    
+                )
+                }
 
                 {/* facebook */}
                 {facebook && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What are your overall goals for FB marketing? (For example, increasing brand awareness, driving engagement, generating leads)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
+                    <div className='container input--field p-3' style={{ color: "white", textAlign: "initial" }}>
+                    {currentQuestionIndex < facebook_ques.length ? (
+                        <div style={{ marginTop: "2px", whiteSpace: "normal" }}>
+                            <p>{facebook_ques[currentQuestionIndex]}</p>
 
-                    </div>
+                            {userResponses.map((response, index) => (
+
+                                <div key={index}>
+
+                                    <p>
+                                        <strong>Response:</strong> {response}
+                                    </p>
+                                    {/* {index === currentQuestionIndex - 1 &&  */}
+                                    {index < facebook_ques.length - 1 && (
+                                        <p>
+                                            <strong></strong> {facebook_ques[index + 1]}
+                                        </p>
+                                    )}
+                                </div>
+
+                            ))}
+                            <input
+                                type="text" className='input-field p-2'
+                                 placeholder='Enter the text here' 
+                                onKeyPress={(event) => {
+                                    if (event.key === "Enter") {
+                                        handleResponseSubmit(event.target.value);
+                                        event.target.value = ""; // Clear input field
+                                    }
+                                } } />
+                        </div>
+                    ) : (
+                        <p>Questionnaire complete! Thank you for your responses.</p>
+                    )}
+                </div>
                 )}
 
                  {/* instagram */}
                  {instagram && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What are your overall goals for Instagram marketing? (For example, increasing brand awareness, driving engagement, generating leads)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
+                    <div className='container input--field p-3' style={{ color: "white", textAlign: "initial" }}>
+                        {currentQuestionIndex < instagram_ques.length ? (
+                            <div style={{ marginTop: "2px", whiteSpace: "normal" }}>
+                                <p>{instagram_ques[currentQuestionIndex]}</p>
 
+                                {userResponses.map((response, index) => (
+
+                                    <div key={index}>
+
+                                        <p>
+                                            <strong>Response:</strong> {response}
+                                        </p>
+                                        {/* {index === currentQuestionIndex - 1 &&  */}
+                                        {index < instagram_ques.length - 1 && (
+                                            <p>
+                                                <strong></strong> {instagram_ques[index + 1]}
+                                            </p>
+                                        )}
+                                    </div>
+
+                                ))}
+                                <input
+                                    type="text" className='input-field p-2'
+                                     placeholder='Enter the text here' 
+                                    onKeyPress={(event) => {
+                                        if (event.key === "Enter") {
+                                            handleResponseSubmit(event.target.value);
+                                            event.target.value = ""; // Clear input field
+                                        }
+                                    } } />
+                            </div>
+                        ) : (
+                            <p>Questionnaire complete! Thank you for your responses.</p>
+                        )}
                     </div>
                 )}
 
                  {/* Website */}
                  {website && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What is the name of the website (For Eg. disco.com) ?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
+                    <div className='container input--field p-3' style={{ color: "white", textAlign: "initial" }}>
+                    {currentQuestionIndex < website_ques.length ? (
+                        <div style={{ marginTop: "2px", whiteSpace: "normal" }}>
+                            <p>{website_ques[currentQuestionIndex]}</p>
 
-                    </div>
+                            {userResponses.map((response, index) => (
+
+                                <div key={index}>
+
+                                    <p>
+                                        <strong>Response:</strong> {response}
+                                    </p>
+                                    {/* {index === currentQuestionIndex - 1 &&  */}
+                                    {index < website_ques.length - 1 && (
+                                        <p>
+                                            <strong></strong> {website_ques[index + 1]}
+                                        </p>
+                                    )}
+                                </div>
+
+                            ))}
+                            <input
+                                type="text" className='input-field p-2'
+                                 placeholder='Enter the text here' 
+                                onKeyPress={(event) => {
+                                    if (event.key === "Enter") {
+                                        handleResponseSubmit(event.target.value);
+                                        event.target.value = ""; // Clear input field
+                                    }
+                                } } />
+                        </div>
+                    ) : (
+                        <p>Questionnaire complete! Thank you for your responses.</p>
+                    )}
+                </div>
+                    
+                    
                 )}
 
                  {/* app */}
                  {app && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What is the name of the app (For Eg. Dunzo, Zomato etc)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
+                    <div className='container input--field p-3' style={{ color: "white", textAlign: "initial" }}>
+                    {currentQuestionIndex < app_ques.length ? (
+                        <div style={{ marginTop: "2px", whiteSpace: "normal" }}>
+                            <p>{app_ques[currentQuestionIndex]}</p>
 
-                    </div>
+                            {userResponses.map((response, index) => (
+
+                                <div key={index}>
+
+                                    <p>
+                                        <strong>Response:</strong> {response}
+                                    </p>
+                                    {/* {index === currentQuestionIndex - 1 &&  */}
+                                    {index < app_ques.length - 1 && (
+                                        <p>
+                                            <strong></strong> {app_ques[index + 1]}
+                                        </p>
+                                    )}
+                                </div>
+
+                            ))}
+                            <input
+                                type="text" className='input-field p-2'
+                                 placeholder='Enter the text here' 
+                                onKeyPress={(event) => {
+                                    if (event.key === "Enter") {
+                                        handleResponseSubmit(event.target.value);
+                                        event.target.value = ""; // Clear input field
+                                    }
+                                } } />
+                        </div>
+                    ) : (
+                        <p>Questionnaire complete! Thank you for your responses.</p>
+                    )}
+                </div>
+                  
                 )}
 
                 {/* Youtube ads */}
                 {youtubeads && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What are the specific goals (KPIs) for your Youtube Ads campaigns (For Eg. Increase website traffic or generate leads)?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
+                    <div className='container input--field p-3' style={{ color: "white", textAlign: "initial" }}>
+                    {currentQuestionIndex < youtubeads_ques.length ? (
+                        <div style={{ marginTop: "2px", whiteSpace: "normal" }}>
+                            <p>{youtubeads_ques[currentQuestionIndex]}</p>
 
-                    </div>
+                            {userResponses.map((response, index) => (
+
+                                <div key={index}>
+
+                                    <p>
+                                        <strong>Response:</strong> {response}
+                                    </p>
+                                    {/* {index === currentQuestionIndex - 1 &&  */}
+                                    {index < youtubeads_ques.length - 1 && (
+                                        <p>
+                                            <strong></strong> {youtubeads_ques[index + 1]}
+                                        </p>
+                                    )}
+                                </div>
+
+                            ))}
+                            <input
+                                type="text" className='input-field p-2'
+                                 placeholder='Enter the text here' 
+                                onKeyPress={(event) => {
+                                    if (event.key === "Enter") {
+                                        handleResponseSubmit(event.target.value);
+                                        event.target.value = ""; // Clear input field
+                                    }
+                                } } />
+                        </div>
+                    ) : (
+                        <p>Questionnaire complete! Thank you for your responses.</p>
+                    )}
+                </div>
+                   
                 )}
 
                 {/* Google */}
                 {google && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What are the specific goals for your Google Ads campaigns (For Eg. Increase website traffic or generate leads)?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
+                    <div className='container input--field p-3' style={{ color: "white", textAlign: "initial" }}>
+                    {currentQuestionIndex < googleques.length ? (
+                        <div style={{ marginTop: "2px", whiteSpace: "normal" }}>
+                            <p>{googleques[currentQuestionIndex]}</p>
 
-                    </div>
+                            {userResponses.map((response, index) => (
+
+                                <div key={index}>
+
+                                    <p>
+                                        <strong>Response:</strong> {response}
+                                    </p>
+                                    {/* {index === currentQuestionIndex - 1 &&  */}
+                                    {index < googleques.length - 1 && (
+                                        <p>
+                                            <strong></strong> {googleques[index + 1]}
+                                        </p>
+                                    )}
+                                </div>
+
+                            ))}
+                            <input
+                                type="text" className='input-field p-2'
+                                 placeholder='Enter the text here' 
+                                onKeyPress={(event) => {
+                                    if (event.key === "Enter") {
+                                        handleResponseSubmit(event.target.value);
+                                        event.target.value = ""; // Clear input field
+                                    }
+                                } } />
+                        </div>
+                    ) : (
+                        <p>Questionnaire complete! Thank you for your responses.</p>
+                    )}
+                </div>
+                   
                 )}
 
                  {/* instagram ads */}
                  {instagramads && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What are your specific goals for Instagram ads? (For eg. increasing brand awareness, driving website traffic, boosting conversions)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
+                    <div className='container input--field p-3' style={{ color: "white", textAlign: "initial" }}>
+                    {currentQuestionIndex < instagramads_ques.length ? (
+                        <div style={{ marginTop: "2px", whiteSpace: "normal" }}>
+                            <p>{instagramads_ques[currentQuestionIndex]}</p>
 
-                    </div>
+                            {userResponses.map((response, index) => (
+
+                                <div key={index}>
+
+                                    <p>
+                                        <strong>Response:</strong> {response}
+                                    </p>
+                                    {/* {index === currentQuestionIndex - 1 &&  */}
+                                    {index < instagramads_ques.length - 1 && (
+                                        <p>
+                                            <strong></strong> {instagramads_ques[index + 1]}
+                                        </p>
+                                    )}
+                                </div>
+
+                            ))}
+                            <input
+                                type="text" className='input-field p-2'
+                                 placeholder='Enter the text here' 
+                                onKeyPress={(event) => {
+                                    if (event.key === "Enter") {
+                                        handleResponseSubmit(event.target.value);
+                                        event.target.value = ""; // Clear input field
+                                    }
+                                } } />
+                        </div>
+                    ) : (
+                        <p>Questionnaire complete! Thank you for your responses.</p>
+                    )}
+                </div>
+                   
                 )}
 
                  {/* Product branding */}
@@ -1654,1678 +2787,365 @@ const questions = [
                 
                  {/* Service */}
                  {service && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What are the core values and personality traits that you want your brand to embody?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
+                    <div className='container input--field p-3' style={{ color: "white", textAlign: "initial" }}>
+                    {currentQuestionIndex < service_ques.length ? (
+                        <div style={{ marginTop: "2px", whiteSpace: "normal" }}>
+                            <p>{service_ques[currentQuestionIndex]}</p>
 
-                    </div>
+                            {userResponses.map((response, index) => (
+
+                                <div key={index}>
+
+                                    <p>
+                                        <strong>Response:</strong> {response}
+                                    </p>
+                                    {/* {index === currentQuestionIndex - 1 &&  */}
+                                    {index < service_ques.length - 1 && (
+                                        <p>
+                                            <strong></strong> {service_ques[index + 1]}
+                                        </p>
+                                    )}
+                                </div>
+
+                            ))}
+                            <input
+                                type="text" className='input-field p-2'
+                                 placeholder='Enter the text here' 
+                                onKeyPress={(event) => {
+                                    if (event.key === "Enter") {
+                                        handleResponseSubmit(event.target.value);
+                                        event.target.value = ""; // Clear input field
+                                    }
+                                } } />
+                        </div>
+                    ) : (
+                        <p>Questionnaire complete! Thank you for your responses.</p>
+                    )}
+                </div>
+                   
                 )}
                 
                  {/* company */}
                  {company && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What is the unique value proposition or core message of your company?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
+                   <div className='container input--field p-3' style={{ color: "white", textAlign: "initial" }}>
+                    {currentQuestionIndex < company_ques.length ? (
+                        <div style={{ marginTop: "2px", whiteSpace: "normal" }}>
+                            <p>{company_ques[currentQuestionIndex]}</p>
 
-                    </div>
+                            {userResponses.map((response, index) => (
+
+                                <div key={index}>
+
+                                    <p>
+                                        <strong>Response:</strong> {response}
+                                    </p>
+                                    {/* {index === currentQuestionIndex - 1 &&  */}
+                                    {index < company_ques.length - 1 && (
+                                        <p>
+                                            <strong></strong> {company_ques[index + 1]}
+                                        </p>
+                                    )}
+                                </div>
+
+                            ))}
+                            <input
+                                type="text" className='input-field p-2'
+                                 placeholder='Enter the text here' 
+                                onKeyPress={(event) => {
+                                    if (event.key === "Enter") {
+                                        handleResponseSubmit(event.target.value);
+                                        event.target.value = ""; // Clear input field
+                                    }
+                                } } />
+                        </div>
+                    ) : (
+                        <p>Questionnaire complete! Thank you for your responses.</p>
+                    )}
+                </div>
                 )}
                 
                  {/* personal */}
                  {personal && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What is the desired perception or emotional response you want to evoke in your target audience?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
+                    <div className='container input--field p-3' style={{ color: "white", textAlign: "initial" }}>
+                    {currentQuestionIndex < personal_ques.length ? (
+                        <div style={{ marginTop: "2px", whiteSpace: "normal" }}>
+                            <p>{personal_ques[currentQuestionIndex]}</p>
 
-                    </div>
+                            {userResponses.map((response, index) => (
+
+                                <div key={index}>
+
+                                    <p>
+                                        <strong>Response:</strong> {response}
+                                    </p>
+                                    {/* {index === currentQuestionIndex - 1 &&  */}
+                                    {index < personal_ques.length - 1 && (
+                                        <p>
+                                            <strong></strong> {personal_ques[index + 1]}
+                                        </p>
+                                    )}
+                                </div>
+
+                            ))}
+                            <input
+                                type="text" className='input-field p-2'
+                                 placeholder='Enter the text here' 
+                                onKeyPress={(event) => {
+                                    if (event.key === "Enter") {
+                                        handleResponseSubmit(event.target.value);
+                                        event.target.value = ""; // Clear input field
+                                    }
+                                } } />
+                        </div>
+                    ) : (
+                        <p>Questionnaire complete! Thank you for your responses.</p>
+                    )}
+                </div>
+                   
                 )}
 
                  {/* digital product */}
                  {digitalprod && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What is the core purpose and value proposition of your tech product?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
+                    <div className='container input--field p-3' style={{ color: "white", textAlign: "initial" }}>
+                    {currentQuestionIndex <digitalprod_ques.length ? (
+                        <div style={{ marginTop: "2px", whiteSpace: "normal" }}>
+                            <p>{digitalprod_ques[currentQuestionIndex]}</p>
 
-                    </div>
+                            {userResponses.map((response, index) => (
+
+                                <div key={index}>
+
+                                    <p>
+                                        <strong>Response:</strong> {response}
+                                    </p>
+                                    {/* {index === currentQuestionIndex - 1 &&  */}
+                                    {index < digitalprod_ques.length - 1 && (
+                                        <p>
+                                            <strong></strong> {digitalprod_ques[index + 1]}
+                                        </p>
+                                    )}
+                                </div>
+
+                            ))}
+                            <input
+                                type="text" className='input-field p-2'
+                                 placeholder='Enter the text here' 
+                                onKeyPress={(event) => {
+                                    if (event.key === "Enter") {
+                                        handleResponseSubmit(event.target.value);
+                                        event.target.value = ""; // Clear input field
+                                    }
+                                } } />
+                        </div>
+                    ) : (
+                        <p>Questionnaire complete! Thank you for your responses.</p>
+                    )}
+                </div>
+                   
                 )}
                 
                  {/* physical */}
                  {physical && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What is the unique selling point or key feature of your physical product?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
+                    <div className='container input--field p-3' style={{ color: "white", textAlign: "initial" }}>
+                    {currentQuestionIndex <physical_ques.length ? (
+                        <div style={{ marginTop: "2px", whiteSpace: "normal" }}>
+                            <p>{physical_ques[currentQuestionIndex]}</p>
 
-                    </div>
+                            {userResponses.map((response, index) => (
+
+                                <div key={index}>
+
+                                    <p>
+                                        <strong>Response:</strong> {response}
+                                    </p>
+                                    {/* {index === currentQuestionIndex - 1 &&  */}
+                                    {index < physical_ques.length - 1 && (
+                                        <p>
+                                            <strong></strong> {physical_ques[index + 1]}
+                                        </p>
+                                    )}
+                                </div>
+
+                            ))}
+                            <input
+                                type="text" className='input-field p-2'
+                                 placeholder='Enter the text here' 
+                                onKeyPress={(event) => {
+                                    if (event.key === "Enter") {
+                                        handleResponseSubmit(event.target.value);
+                                        event.target.value = ""; // Clear input field
+                                    }
+                                } } />
+                        </div>
+                    ) : (
+                        <p>Questionnaire complete! Thank you for your responses.</p>
+                    )}
+                </div>
                 )}
 
                  {/*press */}
                  {press && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What is the core purpose and value proposition of your tech product?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
+                   
+                    <div className='container input--field p-3' style={{ color: "white", textAlign: "initial" }}>
+                    {currentQuestionIndex <press_ques.length ? (
+                        <div style={{ marginTop: "2px", whiteSpace: "normal" }}>
+                            <p>{press_ques[currentQuestionIndex]}</p>
 
-                    </div>
+                            {userResponses.map((response, index) => (
+
+                                <div key={index}>
+
+                                    <p>
+                                        <strong>Response:</strong> {response}
+                                    </p>
+                                    {/* {index === currentQuestionIndex - 1 &&  */}
+                                    {index < press_ques.length - 1 && (
+                                        <p>
+                                            <strong></strong> {press_ques[index + 1]}
+                                        </p>
+                                    )}
+                                </div>
+
+                            ))}
+                            <input
+                                type="text" className='input-field p-2'
+                                 placeholder='Enter the text here' 
+                                onKeyPress={(event) => {
+                                    if (event.key === "Enter") {
+                                        handleResponseSubmit(event.target.value);
+                                        event.target.value = ""; // Clear input field
+                                    }
+                                } } />
+                        </div>
+                    ) : (
+                        <p>Questionnaire complete! Thank you for your responses.</p>
+                    )}
+                </div>
+                   
                 )}
                 
                  {/* TV */}
                  {tv && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What specific product/service/event etc do you wish to do PR for (For Eg. Product Launch, Event Release etc)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
+                    
+                     <div className='container input--field p-3' style={{ color: "white", textAlign: "initial" }}>
+                    {currentQuestionIndex <tv_ques.length ? (
+                        <div style={{ marginTop: "2px", whiteSpace: "normal" }}>
+                            <p>{tv_ques[currentQuestionIndex]}</p>
 
-                    </div>
+                            {userResponses.map((response, index) => (
+
+                                <div key={index}>
+
+                                    <p>
+                                        <strong>Response:</strong> {response}
+                                    </p>
+                                    {/* {index === currentQuestionIndex - 1 &&  */}
+                                    {index < tv_ques.length - 1 && (
+                                        <p>
+                                            <strong></strong> {tv_ques[index + 1]}
+                                        </p>
+                                    )}
+                                </div>
+
+                            ))}
+                            <input
+                                type="text" className='input-field p-2'
+                                 placeholder='Enter the text here' 
+                                onKeyPress={(event) => {
+                                    if (event.key === "Enter") {
+                                        handleResponseSubmit(event.target.value);
+                                        event.target.value = ""; // Clear input field
+                                    }
+                                } } />
+                        </div>
+                    ) : (
+                        <p>Questionnaire complete! Thank you for your responses.</p>
+                    )}
+                </div>
+                    
                 )}
 
                  {/*video */}
                  {video && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'Which type of video do you wish to shoot (For Eg. Music Video, Ad Film, Social Media Content etc)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
+                     <div className='container input--field p-3' style={{ color: "white", textAlign: "initial" }}>
+                     {currentQuestionIndex <video_ques.length ? (
+                         <div style={{ marginTop: "2px", whiteSpace: "normal" }}>
+                             <p>{video_ques[currentQuestionIndex]}</p>
+ 
+                             {userResponses.map((response, index) => (
+ 
+                                 <div key={index}>
+ 
+                                     <p>
+                                         <strong>Response:</strong> {response}
+                                     </p>
+                                     {/* {index === currentQuestionIndex - 1 &&  */}
+                                     {index < video_ques.length - 1 && (
+                                         <p>
+                                             <strong></strong> {video_ques[index + 1]}
+                                         </p>
+                                     )}
+                                 </div>
+ 
+                             ))}
+                             <input
+                                 type="text" className='input-field p-2'
+                                  placeholder='Enter the text here' 
+                                 onKeyPress={(event) => {
+                                     if (event.key === "Enter") {
+                                         handleResponseSubmit(event.target.value);
+                                         event.target.value = ""; // Clear input field
+                                     }
+                                 } } />
+                         </div>
+                     ) : (
+                         <p>Questionnaire complete! Thank you for your responses.</p>
+                     )}
+                 </div>
                 )}
                 
                  {/* photo */}
                  {photo && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'Which type of images do you wish to get shot (For Eg. Model, Food Photography, Product Usage etc)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
+                    
+                     <div className='container input--field p-3' style={{ color: "white", textAlign: "initial" }}>
+                     {currentQuestionIndex <photo_ques.length ? (
+                         <div style={{ marginTop: "2px", whiteSpace: "normal" }}>
+                             <p>{photo_ques[currentQuestionIndex]}</p>
+ 
+                             {userResponses.map((response, index) => (
+ 
+                                 <div key={index}>
+ 
+                                     <p>
+                                         <strong>Response:</strong> {response}
+                                     </p>
+                                     {/* {index === currentQuestionIndex - 1 &&  */}
+                                     {index < photo_ques.length - 1 && (
+                                         <p>
+                                             <strong></strong> {photo_ques[index + 1]}
+                                         </p>
+                                     )}
+                                 </div>
+ 
+                             ))}
+                             <input
+                                 type="text" className='input-field p-2'
+                                  placeholder='Enter the text here' 
+                                 onKeyPress={(event) => {
+                                     if (event.key === "Enter") {
+                                         handleResponseSubmit(event.target.value);
+                                         event.target.value = ""; // Clear input field
+                                     }
+                                 } } />
+                         </div>
+                     ) : (
+                         <p>Questionnaire complete! Thank you for your responses.</p>
+                     )}
+                 </div>
                 )}
-
-                {/* youtubeq1 */}
-                {youtubeq1 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What type of content will resonate best with your target audience on YouTube? (For example, tutorials, product reviews, Vlogs)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                 {/* youtubeq2 */}
-                 {youtubeq2 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What do you want your audience to do you once they come across your page (For Eg. Buy, Subscribe etc)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                 {/* youtubeq3 */}
-                 {youtubeq3 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'Where does your audience lie geographically (For Eg. Is there a particular city/state/country youre targeting)?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                 {/* youtubeq4 */}
-                 {youtubeq4 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'How long do you want your Social Strategy Calendar to be (For Eg. 2 Weeks, 1 Month, 3 months etc)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                 {/* youtubeq5 */}
-                 {youtubeq5 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What is your total budget?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-               
-
-                 {/* facebookq1 /instagramq1 */}
-                 {facebookq1 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What do you want your audience to do you once they come across your page (For Eg. Buy, Subscribe etc)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                 {/* facebookq2/instagramq2 */}
-                 {facebookq2 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'Where does your audience lie geographically (For Eg. Is there a particular city/state/country youre targeting)?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                 {/* facebookq3 /instagramq3*/}
-                 {facebookq3 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'How long do you want your Social Strategy Calendar to be (For Eg. 2 Weeks, 1 Month, 3 months etc)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                {/* facebookq4 /instagramq4 */}
-                {facebookq4 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What is your total budget?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                 {/* websiteq1 */}
-                 {websiteq1 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What will be the key features or functions of the website?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                 {/* websiteq2 */}
-                 {websiteq2 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What do you want your users to do on the site (For Eg. Order Food, Buy Clothes etc) ?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                 {/* websiteq3*/}
-                 {websiteq3 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What will be your business model for the website (For Eg. Single Purchases, Subscriptions, Bulk Orders etc) ?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                {/* websiteq4 */}
-                {websiteq4 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What is the budget & timeline (For eg. $15000 & 4 weeks) ?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                 {/* appq1 */}
-                 {appq1 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What will be the key features or functions of the app?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                 {/* appq2 */}
-                 {appq2 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What do you want your users to do on the app (For Eg. Order Food, Buy Clothes etc) ?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                 {/* appq3*/}
-                 {appq3 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What will be your business model for the app (For Eg. Single Purchases, Subscriptions, Bulk Orders etc) ?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                {/* appq4 */}
-                {appq4 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What is the budget & timeline (For eg. $15000 & 4 weeks) ?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                
-                 {/* digitalprodq1 */}
-                 {digitalprodq1 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'How do you want your tech product brand to be perceived in the market?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                 {/* digitalprodq2/physicalq2 */}
-                 {digitalprodq2 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What key brand attributes and messaging will resonate with your target audience? (For Eg. Speed, security etc)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                 {/* digitalprodq3 /physicalq3 /seriveq2*/}
-                 {digitalprodq3 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What is your total timeline for executing the branding exercise (For Eg. 2 weeks, 1 Month etc)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                {/* digitalprodq4 /physicalq4/serviceq3 */}
-                {digitalprodq4 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What is the total budget for executing the branding exercise?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                {/* digitalprodq1 */}
-                {physicalprodq1 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'How do you want your physical product brand to be perceived in the market?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                {/* serviceq1 */}
-                {serviceq1 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What are the core values and personality traits that you want your brand to embody?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                {/* serviceq2 */}
-                {serviceq2 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What is the desired perception and emotional connection you want to establish with your target audience?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                 {/* companyq1 */}
-                 {companyq1 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What are the key personality traits and qualities you want your brand to convey?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                 {/* personalq1 */}
-                 {personalq1 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What channels and platforms will you use to showcase your personal brand and engage with your target audience?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                {/* personalq2*/}
-                {personalq2 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What is your budget for the entire branding exercise?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                 {/* personalq3 */}
-                 {personalq3 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What is the total timeline for performing this exercise?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                
-                 {/* influencerq1 */}
-                 {influencerq1 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What type of content and messaging will resonate with your audience (For example, product reviews, sponsored content, giveaways)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-                 {/* influencerq2 */}
-                 {influencerq2 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What do you want your viewers to FEEL after looking at your influencer posts (For Eg. Fomo, Desire etc) ?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-                 {/* influencerq3 */}
-                 {influencerq3 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What do you want your viewers to DO (For eg. Buy Now, Visit store, Like etc)?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-                 {/* influencerq4 /pressq6/tvq5*/}
-                 {influencerq4 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What is the total timeline for executing the campaign (For Eg. 2 Weeks, 3 months etc)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-                 {/* influencerq5  /pressq7/tvq6 /videoq5/photoq5*/}
-                 {influencerq5 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What is the total budget (Please be realistic here) ?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                {/* pressq1 */}
-                  {pressq1 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What are the specific goals and objectives of your marketing campaign? (For example, to increase brand awareness, and generate leads etc)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-                 {/*pressq2 */}
-                 {pressq2 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What is the desired reputation or perception you want to build through PR efforts?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-                 {/* pressq3 */}
-                 {pressq3 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What key messages and stories do you want to convey to the public and media?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-                 {/* pressq4 */}
-                 {pressq4 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What type of media channels do you wish to focus on most for reaching your target audience (For Eg. Fashion Magazines, Finance Articles etc)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-                 {/* pressq5 */}
-                 {pressq5 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What do you want your viewers to DO (For eg. Buy Now, Visit store, Like etc)?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-                 
-                 {/*tvq1 */}
-                 {tvq1 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What specific goals and objectives do you want to achieve? (For example, increase brand visibility and credibility, drive website traffic)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-                 {/* tvq2 */}
-                 {tvq2 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'Which TV and radio channels or stations are most relevant ? (For example, national broadcast networks, popular local radio stations)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-                 {/* tvq3 */}
-                 {tvq3 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What key messages and stories do you want to convey? (For example, highlighting the features and benefits of your product, sharing customer testimonials etc)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-                 {/*tvq4 */}
-                 {tvq4 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What do you want your viewers to DO (For eg. Buy Now, Search Name, Like etc)?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                
-                 {/*videoq1 */}
-                 {videoq1 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What key messages or story do you want to convey through the video?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-                 {/* videoq2 */}
-                 {videoq2 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What do you want your viewers to feel after watching the video (For Eg. Fomo, Empathy etc) ?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-                 {/* videoq3 */}
-                 {videoq3 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What do you want your viewers to do after watching the video (For eg. Buy Now, Visit store, Like etc)?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-                 {/*videoq4 */}
-                 {videoq4 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What is the total timeline for executing the video (For Eg. 2 Weeks, 3 months etc)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                 
-                 {/*photoq1 */}
-                 {photoq1 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What key message do you want to convey through the photo (For Eg. Zara - New fashion line launch) ?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-                 {/* photoq2 */}
-                 {photoq2 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What do you want your viewers to feel after looking at the images (For Eg. Fomo, Desire etc) ?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-                 {/* photoq3 */}
-                 {photoq3 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What do you want your viewers to do after looking at the image (For eg. Buy Now, Visit store, Like etc)?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-                 {/*photoq4 */}
-                 {photoq4 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What is the total timeline for executing the Photoshoot (For Eg. 2 Weeks, 3 months etc)',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                {/*business */}
-                {business && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What is the nature of your business?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                        <div className='row qna-box'>
-                            <div className='col-lg-4 col-md-6 col-12'>
-                                <div className='digital-text' onClick={d2bHandler} style={{backgroundColor:buttond2c}}>
-                                    <p onClick={inputFunction} >D2C (Direct to Consumer)</p>
-                                </div>
-                            </div>
-                            <div className='col-lg-4 col-md-6 col-12'>
-                                <div className='digital-text' onClick={b2cHandler} style={{backgroundColor:buttonb2c}}>
-                                    <p onClick={inputFunction}>B2C (Business to Consumer)</p>
-                                </div>
-                            </div>
-                            <div className='col-lg-4 col-md-6 col-12'>
-                                <div className='digital-text' onClick={b2bHandler} style={{backgroundColor:buttonb2b}}>
-                                    <p onClick={inputFunction}>B2B (Business to Business)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='row qna-box'>
-                            <div className='col-lg-4 col-md-6 col-12'>
-                                <div className='digital-text' onClick={independentHandler} style={{backgroundColor:buttonindependent}}>
-                                    <p onClick={inputFunction} >Independent (Artist, Musician etc)</p>
-                                </div>
-                            </div>
-                            </div>
-                    </div>
-                )}
-
-                {/*D2C/b2b/b2c */}
-                {d2c && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What’s your product/business name?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-                {/*D2C q1 */}
-                {d2cq1 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'Which industry does it belong to (For Eg. Retail, Electronics, Fashion etc) ?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-                {/*D2C q2 */}
-                {d2cq2 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'Give us the product or business description and what is unique about it (USP). Try to be elaborate',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-                {/*D2C q3 */}
-                {d2cq3 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'Who is the target customer (For Eg. 18-24 Yr old Metro Women, try to define your audience to the fullest)?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                 {/*vendor */}
-                 {Vendor && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'Do you need vendor for Digital Marketing?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                        <div className='row qna-box'>
-                            <div className='col-lg-4 col-md-6 col-12'>
-                                <div className='digital-text' onClick={yesHandler} style={{backgroundColor:buttonyes}}>
-                                    <p onClick={inputFunction} >Yes</p>
-                                </div>
-                            </div>
-                            <div className='col-lg-4 col-md-6 col-12'>
-                                <div className='digital-text' onClick={noHandler} style={{backgroundColor:buttonno}}>
-                                    <p onClick={inputFunction}>No</p>
-                                </div>
-                            </div>
-                           
-                        </div>
-                        
-                    </div>
-                )}
-
-                 {/*yes */}
-                 {yes && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'What kind of a vendor partnership are you looking for? Retainer (Monthly payments) or a Project (One time cost)?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                        <div className='row qna-box'>
-                            <div className='col-lg-4 col-md-6 col-12'>
-                                <div className='digital-text' onClick={projectHandler} style={{backgroundColor:buttonproject}}>
-                                    <p onClick={inputFunction} >Project</p>
-                                </div>
-                            </div>
-                            <div className='col-lg-4 col-md-6 col-12'>
-                                <div className='digital-text' onClick={yearlyHandler} style={{backgroundColor:buttonyearly}}>
-                                    <p onClick={inputFunction}>Yearly Retainer</p>
-                                </div>
-                            </div>
-                            <div className='col-lg-4 col-md-6 col-12'>
-                                <div className='digital-text' onClick={halfyearlyHandler} style={{backgroundColor:buttonhalfyearly}}>
-                                    <p onClick={inputFunction}>Half-Yearly Retainer</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='row qna-box'>
-                            <div className='col-lg-4 col-md-6 col-12'>
-                                <div className='digital-text' onClick={quarterlyHandler} style={{backgroundColor:buttonquarterly}}>
-                                    <p onClick={inputFunction} >Quarterly Retainer</p>
-                                </div>
-                            </div>
-                            </div>
-                    </div>
-                )}
-
-                 {/*project/yearly/half-yearly/quarterly */}
-                 {project && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'When are you planning to start (Help us with an approximate date) ?',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-                 {/*projectq1 */}
-                 {projectq1 && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'Input estimated budget. If you’ve chosen retainer, then put the monthly budget',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                    </div>
-                )}
-
-                 {/*No/ question after projectq1 */}
-                 {no && (
-                    <div>
-                        <div className='bussiness' >
-                            <div className='logo'>
-                                <img src='./images/logo.png' alt=''></img>
-                            </div>
-                            <span> <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'You are ready to create a blueprint, now!',
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={70}
-                                style={{ fontSize: '1rem', color: '#ececf1', flex: '1', textAlign: 'center', gap: '10px' }}
-                            /></span>
-                        </div>
-
-                        <div className='row qna-box'>
-                            <div className='col-lg-4 col-md-6 col-12'>
-                                <div className='digital-text' onClick={noHandler} style={{backgroundColor:buttonno}}>
-                                    <p>Genernate a blueprint, Now</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-                )}
-                 
-
-
-                
-
-            {/* Right accordion */}
-            <div className='qna-header right-acc'>
-                <div className='divider mt-5'></div>
-                <div className='cards-group'>
-                    <p className='stp-title'>Steps</p>
-                    <div className='step-group'>
-                        <span className='line'></span>
-                        <div className='step'>
-                            <span className='circle'></span>
-                            <p className='text'>Stage Selection</p>
-                        </div>
-                        <div className='step'>
-                            <span className='circle'></span>
-                            <p className='text'>Service Requirements</p>
-                        </div>
-                        <div className='step'>
-                            <span className='circle'></span>
-                            <p className='text'>Service Spefication</p>
-                        </div>
-                        <div className='step'>
-                            <span className='circle'></span>
-                            <p className='text'>Business bio</p>
-                        </div>
-                        <div className='step'>
-                            <span className='circle'></span>
-                            <p className='text'>Vendor partership</p>
-                        </div>
-                    </div>
-
-                    <div className='company-group'>
-                        <p>Privacy policies</p>
-                        <p>Terms and conditions</p>
-                        <p>© 2023 TEN Inc.</p>
-                        <p>Contact us</p>
-                    </div>
-                </div>
-            </div>
+                                    
+            
             {/* <Right_part/> */}
-
-            
-            
-             <footer>
-             {/* <div className="container">
-        <input type="text" onChange={handleText} />
-      </div>  */}
-
-<div className='container input--field p-3' style={{color:"white", marginLeft:"14rem", textAlign:"initial"}} >
-      {currentQuestionIndex < questions.length ? (
-        <div style={{marginTop:"2px", whiteSpace:"normal"}}>
-          {/* <p>{questions[currentQuestionIndex]}</p> */}
-          
-          {userResponses.map((response, index) => (
-            <div key={index}>
-              <p>
-                <strong>Response:</strong> {response}
-              </p>
-              {index === currentQuestionIndex - 1 &&
-                index < questions.length - 1 && (
-                  <p>
-                    <strong>Next Question:</strong> {questions[index + 1]}
-                  </p>
-                )}
-            </div>
-            
-          ))}
-          <input
-          type="text" className='input-field p-2'
-          readOnly= {true} placeholder='Enter the text here' ref = {inputRef}  
-            onKeyPress={(event) => {
-              if (event.key === "Enter") {
-                handleResponseSubmit(event.target.value);
-                event.target.value = ""; // Clear input field
-              }
-            }}
-          />
-        </div>
-      ) : (
-        <p>Questionnaire complete! Thank you for your responses.</p>
-      )}
-    </div>
-
-      {/* <div className="text-container">{typeText}</div> */}
-       {/* <div style={{color:"white", marginLeft:"14rem", textAlign:"initial"}} ref = {inputRef}> {displayedText && <p>  {displayedText}</p>}</div>  */}
-    {/* <div className='container input--field p-3' >
-      <input type="text" className='input-field p-2' value={inputText} onChange={handleInputChange} onKeyPress={handleEnterPress} 
-      readOnly= {true} placeholder='Enter the text here' ref = {inputRef} />
-       
-    </div>
-     */}
-    {/* <div className='bottom-position'>
-    <p className='bottom-text'>
-        Our goal is to make the startup ecosystem systems more seamless. Your<a href='#'>feedback</a> will help us to improve.
-        </p>
-        </div> */}
-    
-</footer> 
 
             
         </div>
