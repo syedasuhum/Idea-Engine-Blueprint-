@@ -78,6 +78,10 @@ function QnA_page() {
     const [buttonvideo, setButtonvideo] = useState("");
     const [buttonphoto, setButtonPhoto] = useState("");
     
+    const[generatepdf, setgeneratepdf]=useState("");
+    const generatehandler=()=>{
+        
+    };
 
     const ideaHandler = () => {
         setIdea(true);
@@ -1800,7 +1804,7 @@ const website_ques = [
                             /></span>
                         </div>
 
-                        <div className='row qna-box'>
+                        {/* <div className='row qna-box'>
                             <div className='col-lg-4 col-md-6 col-12'>
                                 <div className='qna-border'>
                                     <div className="lock-icon" style={{ position: "relative", right: "85px", bottom: "5px" }}>
@@ -1834,7 +1838,7 @@ const website_ques = [
                                 </div>
 
                             </div>
-                        </div>
+                        </div> */}
 
                         <div className='row qna-box'>
                             <div className='col-lg-4 col-md-6 col-12' onClick={digitalHandler}>
@@ -2265,7 +2269,11 @@ const website_ques = [
                                  } } />
                          </div>
                      ) : (
-                         <p>Questionnaire complete! Thank you for your responses.</p>
+                        <div>
+                         <p>Questionnaire complete! Thank you for your responses.
+
+                         </p>
+                         <button type='button' className='btn btn-primary' onClick={generatehandler}>Generate PDF</button></div>
                      )}
                  </div>
                     
