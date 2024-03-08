@@ -19,7 +19,8 @@ router
 
 router
     .route("/generatepdf")
-    .post(isAuthenticatedUser,createPdf);
+    //.post(isAuthenticatedUser,createPdf);
+    .post(createPdf);
 
 
 

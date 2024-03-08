@@ -63,33 +63,44 @@ exports.logout = catchAsyncErrors(async (req, res, next) => {
 // Creating PDF
 exports.createPdf = catchAsyncErrors(async (req, res, next) => {
     try {
-      const { messages } = req.body;
-    //   console.log(messages);
-  
-      // Create a PDF document
-      const doc = new PDFDocument();
-      const fileName = 'output.pdf';
-  
-      // Set content disposition to force the browser to download the file
-      res.setHeader('Content-Disposition', `attachment; filename="${fileName}"`);
-      res.setHeader('Content-Type', 'application/pdf');
-  
-      // Pipe the PDF content to the response
-      doc.pipe(res);
-  
-      // Write questionnaire or chat messages to the PDF
-      doc.fontSize(12);
-      [...messages].forEach((message, index) => {
-        const messageText = message.desc ? message.desc : 'N/A';
-        doc.text(`${index + 1}. ${messageText}`); 
-        doc.moveDown();
-      });
-  
-      // Finalize the PDF
-      doc.end();
+        const { questions, answers } = req.body;
+
+        // Create a PDF document
+        const doc = new PDFDocument();
+        const fileName = 'output.pdf';
+
+        // Set content disposition to force the browser to download the file
+        res.setHeader('Content-Disposition', `attachment; filename="${fileName}"`);
+        res.setHeader('Content-Type', 'application/pdf');
+
+        // Pipe the PDF content to the response
+        doc.pipe(res);
+
+        // Write questionnaire or chat messages to the PDF
+        doc.fontSize(12);
+        for (let index = 0; index < questions.length; index++) {
+            const questionText = questions[index] ? questions[index] : 'N/A';
+            const answerText = answers[index] ? answers[index] : 'N/A';
+
+            doc.text(`${index + 1}. ${questionText}`);
+            doc.moveDown();
+            doc.text(`Ans. ${answerText}`);
+            doc.moveDown();
+        }
+        // [...questions].forEach((question, index) => {
+        //     const questionText = question ? question : 'N/A';
+        //     const answerText = answers[index] ? answers[index] : 'N/A';
+        //     doc.text(${index + 1}. ${questionText});
+        //     doc.moveDown();
+        //     doc.text(Ans. ${answerText});
+        //     doc.moveDown();
+        // });
+
+        // Finalize the PDF
+        doc.end();
     } catch (error) {
-      // Handle errors
-      console.error(error);
-      return next(error);
+        // Handle errors
+        console.error(error);
+        return next(error);
     }
-  });
+});
