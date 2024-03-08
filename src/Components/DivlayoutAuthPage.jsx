@@ -46,10 +46,10 @@ const DivlayoutAuthPage = () => {
 
     if(data.status === 401 || !data){
       window.alert("Invalid Registration");
-      console.log("Invalid Registration");
+      // console.log("Invalid Registration");
     }else{
       window.alert("Registration Successfull");
-      console.log("Registration Successfull");
+      // console.log("Registration Successfull");
 
       navigate('/login');
     }
