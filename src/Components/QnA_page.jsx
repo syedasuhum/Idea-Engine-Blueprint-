@@ -1884,11 +1884,11 @@ function QnA_page() {
                             <p>TenMarket</p>
                         </section>
                         {/* <h3>Blueprint {clownCounter}</h3> */}
-                        <div className='pro-algin'>
+                        {/* <div className='pro-algin'>
                             <span className='qna-free'>Free</span>
                             <span className='qna-pro'>Pro</span>
                             <span className='qna-pro'>Premium</span>
-                        </div>
+                        </div> */}
                     </div>
                     <div className='mydivider mt-5'></div>
                     <div className='bussiness' style={{ padding: "32px 10px" }}>

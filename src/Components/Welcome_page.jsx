@@ -17,7 +17,7 @@ function Welcome_page() {
 
             <div className='day-algin'>
 
-                <div class="component__ProfileDropdown fix-top-right">
+                {/* <div class="component__ProfileDropdown fix-top-right">
                     <div class="button" data-type="compact">
                         <picture class="profile__img">
                             <img src="https://api.dicebear.com/6.x/initials/svg?seed=Mohd Faisal Saifi" alt="user profile image" />
@@ -56,16 +56,16 @@ function Welcome_page() {
                             <p>Log out</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
 
 
 
-                <div className='version mt-3'>
+                {/* <div className='version mt-3'>
                     <span className='free'>Free</span>
                     <span className='pro'>Pro</span>
                     <span className='pro'>Premium</span>
-                </div>
+                </div> */}
                 <h1 className='title mt-3'>Welcome to TEN Market</h1>
                 <h3 className='subtitle mt-3'>BLUEPRINT TO BRILLIANCE</h3>
                 <div className='content mt-5'>
